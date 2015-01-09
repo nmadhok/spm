@@ -18,7 +18,7 @@ Installation
 
 #. The package gets copied to a local packages directory in ``/etc/salt/spm/pkgs``
 #. SPM reads the package's MANIFEST file, which points to the location of different salt components. Where the list
-values such as ``pkg_modules/`` represent relative paths to the package's root folder::
+   values such as ``pkg_modules/`` represent relative paths to the package's root folder::
 
     modules:
       - pkg_modules/
