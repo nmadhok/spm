@@ -16,8 +16,9 @@ Benefits
 Installation
 ------------
 
-#. The package gets copied to a local packagesdirectory in /etc/salt/spm/pkgs.
-#. SPM reads the package's MANIFEST file, which points to the location of different salt components. Where the list values such as ``pkg_modules/`` represent relative paths to the package's root folder::
+#. The package gets copied to a local packages directory in ``/etc/salt/spm/pkgs``
+#. SPM reads the package's MANIFEST file, which points to the location of different salt components. Where the list
+values such as ``pkg_modules/`` represent relative paths to the package's root folder::
 
     modules:
       - pkg_modules/
@@ -27,7 +28,7 @@ Installation
       - pkgname/
     ...
 
-#. SPM symlinks the paths from the MANIFEST into the appropriate places in the file_root and pillar_root.
+#. SPM symlinks the paths from the MANIFEST into the appropriate places in the ``file_root`` and ``pillar_root``::
 
     /etc/salt/spm/pkgs/pkgname/pkg_modules/ -> /srv/salt/_modules/pkgname/pkg_modules/
     /etc/salt/spm/pkgs/pkgname/pkgname/ -> /srv/salt/pkgname/
@@ -42,5 +43,5 @@ by using the salt Loader to analyze the master config, or if not available the m
 Best Practices
 --------------
 
-Package maintainers should put all cofiguration into pillar values. The package should include an example pillar file 
-with comment documentation explaining each of the parameters.
+Package maintainers should put all configuration into pillar values. The package should include an example pillar
+file with comment documentation explaining each of the parameters.
