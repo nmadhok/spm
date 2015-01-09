@@ -4,3 +4,7 @@ Vagrantfile
 *.egg
 *.egg-info/*
 *.tar.gz
+*.pyc
+
+# Ignore build directory
+build/
