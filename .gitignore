@@ -8,3 +8,6 @@ Vagrantfile
 
 # Ignore build directory
 build/
+
+# Ignore swap files
+*.swp
